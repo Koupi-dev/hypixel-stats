@@ -111,7 +111,7 @@ function setMode(mode) {
 
 async function fetchStats() {
   try {
-    const res = await fetch("http://localhost:8000/api/me");
+    const res = await fetch("https://api.koupi.dev/api/me");
     const data = await res.json();
     allStats = data;
 
