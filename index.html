@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <title>My Hypixel Stats</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <section class="firstSection">
+    <video autoplay muted loop class="background-video">
+      <source src="items/background.mp4" type="video/mp4" />
+    </video>
+    <h1>Welcome to my Hypixel Stats!</h1>
+    <p>It is updated in real time every 10 seconds!</p>
+  </section>
+
+  <section>
+    <div class="stats-container">
+      <h1>My Overall Stats.</h1>
+      <div class="overall">
+        <p>My current IGN: <span id="myCurrentIGN">Loading...</span></p>
+        <p>My status: <span id="status">Loading...</span></p>
+        <p>My Network Level: <span id="networkLevel">Loading...</span></p>
+        <p>My Karma: <span id="karma">Loading...</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stats-container">
+      <h1 class="statsAll">My Duel Stats</h1>
+      <div class="duel-buttons">
+        <button onclick="setMode('Overall')">Overall</button>
+        <button onclick="setMode('Sumo')">Sumo</button>
+        <button onclick="setMode('Classic')">Classic</button>
+        <button onclick="setMode('Bridge')">Bridge</button>
+      </div>
+      <div class="stats-cade">
+        <p id="modeTitle" style="text-align: center; font-size: 2rem;">Loading...</p>
+        <p>Division: <span id="division">Loading...</span></p>
+        <p>Wins: <span id="wins">Loading...</span></p>
+        <p>Losses: <span id="losses">Loading...</span></p>
+        <p>Rounds Played: <span id="roundsPlayed">Loading...</span></p>
+        <p>Current Win Streak: <span id="currentWinStreak">Loading...</span></p>
+        <p>Best Win Streak: <span id="bestWinStreak">Loading...</span></p>
+        <p>Kills: <span id="kills">Loading...</span></p>
+        <p>Deaths: <span id="deaths">Loading...</span></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/Koupi-dev" target="_blank" class="footer-icon">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.youtube.com/@McKupi" target="_blank" class="footer-icon">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="https://discord.com/users/1322049832696938581" target="_blank" class="footer-icon">
+        <i class="fab fa-discord"></i> Discord
+      </a>
+    </div>
+    <p>Made by Koupi w/ love <3</p>
+  </footer>
+
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
