@@ -119,7 +119,7 @@ async function fetchStats() {
     animateChange(
       status,
       data.status === "online"
-        ? `<span class="online">Online</span> — Playing ${data.playing}`
+        ? `<span class="online">Online!</span> — Playing ${data.playing}`
         : `<span class="offline">Offline</span> (Last login: ${data.lastLogin})`
     );
     animateChange(networkLevel, `${data.networkLevel}`);
