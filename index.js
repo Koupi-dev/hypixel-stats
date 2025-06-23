@@ -136,4 +136,4 @@ document.querySelectorAll(".duel-buttons button").forEach(btn =>
 );
 
 fetchStats();
-setInterval(fetchStats, 1000);
+setInterval(fetchStats, 10000);
